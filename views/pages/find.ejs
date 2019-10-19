@@ -1,0 +1,19 @@
+<h1 class="display-6">Find Users</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Surname</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% users.forEach( function (user) { %>
+        <tr>
+            <td><%= user.id %> </td>
+            <td><%= user.name %> </td>
+            <td><%= user.surname %> </td>
+        </tr>
+        <% }); %>
+    </tbody>
+</table>
