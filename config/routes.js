@@ -23,13 +23,10 @@ module.exports.routes = {
   'GET /users/list': 'UserController.list',
   'GET /users/add': { view: 'pages/add' },
   'POST /user/create': 'UserController.create',
-  'POST /user/delete/:id': 'UserController.delete',
   'GET /user/edit/:id': 'UserController.edit',
   'POST /user/update/:id': 'UserController.update',
-  'GET /users/find/:name': 'UserController.find'
-
-
-
+  'POST /user/delete/:id': 'UserController.delete',
+  'GET /users/find': 'UserController.find'
 
   /***************************************************************************
   *                                                                          *
@@ -41,6 +38,4 @@ module.exports.routes = {
   * not match any of those, it is matched against static assets.             *
   *                                                                          *
   ***************************************************************************/
-
-
 };
