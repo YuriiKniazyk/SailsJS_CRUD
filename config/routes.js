@@ -26,7 +26,13 @@ module.exports.routes = {
   'GET /user/edit/:id': 'UserController.edit',
   'POST /user/update/:id': 'UserController.update',
   'POST /user/delete/:id': 'UserController.delete',
-  'GET /users/find': 'UserController.find'
+  'GET /users/find': 'UserController.find',
+
+
+  'GET /login': { view: 'pages/login' },
+  'POST /login': 'AuthController.login',
+  'GET /logout': 'AuthController.logout',
+  'GET /register': { view: 'pages/register' }
 
   /***************************************************************************
   *                                                                          *
